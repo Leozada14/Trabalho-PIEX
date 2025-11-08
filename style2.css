@@ -1,0 +1,66 @@
+body{
+	background-color: LightSlateGray;
+}
+header{
+	display: flex;
+	justify-content: center;
+	margin-top: 25px;
+	gap: 50px;
+}
+
+header a{
+	text-decoration: none; color: inherit;
+}
+
+.titulo{
+ width: 50%;
+ font-size: 10px;
+ margin-right: 180px;
+ margin-top: -20px;
+}
+
+.imagem{
+margin-left: 130px;
+}
+.imagem img{
+	border: 2px solid black;
+	border-radius: 3px;
+}
+
+.topo{
+	display: flex;
+	margin-top: 100px;
+
+}
+
+.embaixo{
+	margin-top: 160px;
+}
+
+.TextoEmbaixo{
+	display: flex;
+	justify-content: center;
+
+}
+
+.imangesEmbaixo{
+	display: flex;
+	justify-content: center;
+	gap: 50px;
+}
+.sobre{
+	margin-left: 200px;
+	font-size: 25px;
+}
+
+
+
+
+footer {
+  text-align: center;
+  background-color: SteelBlue;
+}
+
+.foot{
+	margin-top: 100px;
+}

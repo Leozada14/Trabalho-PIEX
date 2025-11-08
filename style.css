@@ -1,0 +1,136 @@
+body{
+	width: auto;
+	background-color: LightSlateGray;
+}
+header{
+	display: flex;
+	justify-content: center;
+	margin-top: 25px;
+	gap: 50px;
+}
+
+header a{
+	text-decoration: none; color: inherit;
+}
+.titulo{
+	display: flex;
+	font-size: 30px;
+	flex-direction: column;
+	font-family:Helvetica, Arial, sans-serif;
+	margin-top: 150px;
+	margin-left: 130px;
+}
+
+.imagem{
+	display: flex;
+	justify-content: flex-end;
+	margin-right: 180px;
+	margin-top: -270px;
+}
+
+.esquerda{
+	margin-top: 130px;
+}
+.evento{
+	margin-left: 370px;
+	font-family:Helvetica, Arial, sans-serif;
+}
+.caixaG{
+	float: left;
+    width: 67%;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.caixas{
+float: left;
+    background-color: SteelBlue;
+    width: 247px;
+    height: 259px;
+    text-align: center;
+    margin: 40px 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dentro{
+	float: left;
+    width: 90%;
+}
+
+.caixas2{
+float: left;
+    background-color: SteelBlue;
+    width: 247px;
+    height: 259px;
+    text-align: center;
+    margin: 40px 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.dentro2{
+	float: left;
+    width: 90%;
+}
+
+.caixas3{
+float: left;
+    background-color: SteelBlue;
+    width: 247px;
+    height: 259px;
+    text-align: center;
+    margin: 40px 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.dentro3{
+	float: left;
+    width: 90%;
+}
+
+
+
+.direita{
+	display: flex;
+	justify-content: flex-end;
+	margin-top: -30px;
+	flex-direction: column;
+	align-items: center;
+	width: 25%;
+	background-color: SteelBlue;
+	border-radius: 8px;
+}
+
+.direita p{
+	font-size: large;
+}
+
+footer {
+  text-align: center;
+  background-color: SteelBlue;
+}
+
+.foot{
+	margin-top: 50px;
+}
+
+.Final{
+	margin-top: 100px;
+}
+.Final h1{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.imagens{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 200px;
+}
+
