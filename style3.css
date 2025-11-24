@@ -1,0 +1,170 @@
+body{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: LightSlateGray;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+
+header{
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+    gap: 50px;
+}
+
+header a{
+    text-decoration: none;
+    color: inherit;
+}
+
+
+.titulo{
+    font-size: 30px;
+    margin-top: 150px;
+    text-align: center;        
+    width: 100%;
+}
+
+.imagem{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 180px;
+    margin-top: -270px; /* Mantido */
+}
+
+.esquerda{
+    margin-top: 130px;
+}
+
+
+.evento{
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.caixaG{
+    width: 100%;
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    justify-items: center;
+    gap: 20px;
+}
+
+.caixas, .caixas2, .caixas3{
+    background-color: SteelBlue;
+    width: 247px;
+    height: 259px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+}
+
+.dentro, .dentro2, .dentro3{
+    width: 90%;
+}
+
+
+.direita{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    margin: auto;
+    margin-top: 30px;
+    flex-direction: column;
+    background-color: SteelBlue;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.direita p{
+    font-size: large;
+}
+
+/* ===== FINAL ===== */
+.Final{
+    margin-top: 100px;
+}
+
+.Final h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imagens{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 200px;
+    flex-wrap: wrap;
+}
+
+
+@media (max-width: 992px){
+
+    .titulo{
+        margin: 80px 0 0 0;
+        text-align: center;
+        width: 100%;
+    }
+
+    .imagem{
+        justify-content: center;
+        margin: 0;
+        margin-top: 20px;
+    }
+
+    .evento{
+        margin: 0 auto;
+        text-align: center;
+        width: 100%;
+    }
+
+    .direita{
+        width: 60%;
+    }
+
+    .imagens{
+        gap: 80px;
+    }
+}
+
+@media (max-width: 600px){
+
+    header{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .titulo{
+        margin: 40px 0 0 0;
+        font-size: 24px;
+        text-align: center;
+        width: 100%;
+    }
+
+    .imagem{
+        justify-content: center;
+        margin: 0;
+    }
+
+    .evento{
+        margin-left: 0;
+        text-align: center;
+        width: 100%;
+    }
+
+    .direita{
+        width: 90%;
+    }
+
+    .imagens{
+        gap: 40px;
+    }
+}
