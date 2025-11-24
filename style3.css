@@ -146,7 +146,14 @@ header a{
 
     header{
         flex-direction: column;
+        align-items: center; /* CENTRALIZA */
+        text-align: center;  /* CENTRALIZA */
         gap: 20px;
+    }
+
+    header a{
+        text-align: center;
+        width: 100%;
     }
 
     .titulo{
@@ -175,9 +182,10 @@ header a{
         gap: 40px;
     }
 
-    /* garante que continue igual no celular */
+    /* imagens iguais no mobile */
     .imagens img{
         width: 110px;
         height: 110px;
     }
 }
+
