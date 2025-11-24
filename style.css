@@ -6,7 +6,7 @@ body{
     font-family: Helvetica, Arial, sans-serif;
 }
 
-/* ===== HEADER ===== */
+
 header{
     display: flex;
     justify-content: center;
@@ -19,7 +19,7 @@ header a{
     color: inherit;
 }
 
-/* ===== TÍTULO E IMAGEM (DESKTOP EXATAMENTE IGUAL) ===== */
+
 .titulo{
     font-size: 30px;
     margin: 150px 0 0 130px;
@@ -29,22 +29,22 @@ header a{
     display: flex;
     justify-content: flex-end;
     margin-right: 180px;
-    margin-top: -270px; /* Mantido */
+    margin-top: -270px;
 }
 
-/* ===== BLOCO ESQUERDA ===== */
+
 .esquerda{
     margin-top: 130px;
 }
 
-/* ====== EVENTO CENTRALIZADO ====== */
+
 .evento{
     width: 100%;
     text-align: center;
     margin: 0 auto;
 }
 
-/* ===== CAIXAS ===== */
+
 .caixaG{
     width: 100%;
     margin-top: 20px;
@@ -68,7 +68,7 @@ header a{
     width: 90%;
 }
 
-/* ===== LADO DIREITO ===== */
+
 .direita{
     display: flex;
     justify-content: center;
@@ -86,7 +86,7 @@ header a{
     font-size: large;
 }
 
-/* ===== FOOTER ===== */
+
 footer {
     text-align: center;
     background-color: SteelBlue;
@@ -94,7 +94,7 @@ footer {
     margin-top: 50px;
 }
 
-/* ===== FINAL ===== */
+
 .Final{
     margin-top: 100px;
 }
@@ -113,15 +113,11 @@ footer {
     flex-wrap: wrap;
 }
 
-/* ======================================================
-   =================== RESPONSIVIDADE ===================
-   ====================================================== */
 
-/* ====== TABLETS ====== */
 @media (max-width: 992px){
 
     .titulo{
-        margin: 80px 0 0 0; /* centraliza sem quebrar layout */
+        margin: 80px 0 0 0;
         text-align: center;
     }
 
@@ -146,18 +142,25 @@ footer {
     }
 }
 
-/* ====== CELULAR ====== */
 @media (max-width: 600px){
 
     header{
         flex-direction: column;
+        align-items: center; /* CENTRALIZA */
+        text-align: center;  /* CENTRALIZA */
         gap: 20px;
+    }
+
+    header a{
+        text-align: center;
+        width: 100%;
     }
 
     .titulo{
         margin: 40px 0 0 0;
         font-size: 24px;
         text-align: center;
+        width: 100%;
     }
 
     .imagem{
@@ -179,3 +182,5 @@ footer {
         gap: 40px;
     }
 }
+
+
