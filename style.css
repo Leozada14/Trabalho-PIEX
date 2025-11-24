@@ -145,20 +145,15 @@ footer {
 @media (max-width: 600px){
 
     header{
-        flex-direction: column;
-        align-items: center; /* CENTRALIZA */
-        text-align: center;  /* CENTRALIZA */
-        gap: 20px;
-    }
-
-    header a{
-        text-align: center;
-        width: 100%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
     }
 
     .titulo{
-        margin: 40px 0 0 0;
-        font-size: 24px;
+        margin: 20px 0 0 0;
+        font-size: 18px;
         text-align: center;
         width: 100%;
     }
@@ -166,21 +161,23 @@ footer {
     .imagem{
         justify-content: center;
         margin: 0;
+        width: 45%;
     }
 
     .evento{
         margin-left: 0;
         text-align: center;
-        width: 100%;
+        width: 45%;
     }
 
     .direita{
-        width: 90%;
+        width: 100%;
     }
 
     .imagens{
-        gap: 40px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
     }
 }
-
-
