@@ -144,43 +144,34 @@ footer {
 
 @media (max-width: 600px){
 
-    /* Coloca título + imagem lado a lado */
-    .top-section {
+    .titulo {
+        font-size: 20px;
+        line-height: 40px;
+        width: auto;
+        margin: 0px;
         display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        width: 100%;
-        padding: 0 20px;
-    }
-
-    .titulo{
-        font-size: 28px;
-        line-height: 32px;
-        font-weight: bold;
-        width: 50%;
-        margin: 0;
         text-align: left;
     }
 
-    .imagem{
-        width: 50%;
+    .imagem {
         display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 0;
+        margin-top: -126px;
+        margin-left: 330px;
     }
+
 
     .imagem img{
         width: 120px;
         height: auto;
     }
 
-    /* resto */
-    header{
+
+    header {
         flex-direction: row;
         justify-content: center;
         gap: 30px;
+        margin: 30px;
+        height: 65px;
     }
 
     .evento{
@@ -196,6 +187,7 @@ footer {
         gap: 40px;
     }
 }
+
 
 
 
