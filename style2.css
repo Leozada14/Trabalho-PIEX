@@ -1,66 +1,125 @@
 body{
-	background-color: LightSlateGray;
+    background-color: LightSlateGray;
 }
+
+/* ===== HEADER ===== */
 header{
-	display: flex;
-	justify-content: center;
-	margin-top: 25px;
-	gap: 50px;
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+    gap: 50px;
 }
 
 header a{
-	text-decoration: none; color: inherit;
+    text-decoration: none;
+    color: inherit;
 }
 
+/* ===== TOPO ===== */
+.topo{
+    display: flex;
+    margin-top: 100px;
+}
+
+/* Mantém o alinhamento original */
 .titulo{
- width: 50%;
- font-size: 10px;
- margin-right: 180px;
- margin-top: -20px;
+    width: 50%;
+    font-size: 10px;
+    margin-right: 180px;
+    margin-top: -20px;
 }
 
 .imagem{
-margin-left: 130px;
+    margin-left: 130px;
 }
+
 .imagem img{
-	border: 2px solid black;
-	border-radius: 3px;
+    border: 2px solid black;
+    border-radius: 3px;
+    max-width: 100%;
+    height: auto;
 }
 
-.topo{
-	display: flex;
-	margin-top: 100px;
-
-}
-
+/* ===== PARTE DE BAIXO ===== */
 .embaixo{
-	margin-top: 160px;
+    margin-top: 160px;
 }
 
 .TextoEmbaixo{
-	display: flex;
-	justify-content: center;
-
+    display: flex;
+    justify-content: center;
 }
 
 .imangesEmbaixo{
-	display: flex;
-	justify-content: center;
-	gap: 50px;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap; /* Apenas para evitar quebra feia */
 }
+
 .sobre{
-	margin-left: 200px;
-	font-size: 25px;
+    margin-left: 200px;
+    font-size: 25px;
 }
 
-
-
-
+/* ===== FOOTER ===== */
 footer {
-  text-align: center;
-  background-color: SteelBlue;
+    text-align: center;
+    background-color: SteelBlue;
 }
 
 .foot{
-	margin-top: 100px;
+    margin-top: 100px;
+}
+
+/* ==================================================
+   ============== RESPONSIVIDADE ====================
+   ================================================== */
+
+/* ===== Tablets ===== */
+@media (max-width: 992px){
+
+    .topo{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .titulo{
+        width: 90%;
+        margin: 0;
+        font-size: 18px;
+    }
+
+    .imagem{
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    .sobre{
+        margin-left: 0;
+        text-align: center;
+    }
+}
+
+/* ===== Celulares ===== */
+@media (max-width: 600px){
+
+    header{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .titulo{
+        width: 100%;
+        font-size: 16px;
+    }
+
+    .imangesEmbaixo{
+        gap: 30px;
+    }
+
+    .embaixo{
+        margin-top: 80px;
+    }
 }
