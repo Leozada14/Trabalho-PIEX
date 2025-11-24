@@ -145,29 +145,33 @@ footer {
 @media (max-width: 600px){
 
     header{
+        display: flex;
         flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
+        align-items: center;
+        justify-content: space-between;
         gap: 10px;
+        width: 100%;
     }
 
     .titulo{
         margin: 20px 0 0 0;
-        font-size: 18px;
+        font-size: 20px;
         text-align: center;
         width: 100%;
     }
 
     .imagem{
+        display: flex;
         justify-content: center;
+        align-items: center;
         margin: 0;
-        width: 45%;
+        width: 48%;
     }
 
     .evento{
-        margin-left: 0;
+        width: 48%; 
         text-align: center;
-        width: 45%;
+        margin: 0;
     }
 
     .direita{
@@ -176,8 +180,11 @@ footer {
 
     .imagens{
         display: flex;
-        flex-wrap: wrap;
         justify-content: center;
-        gap: 20px;
+        align-items: center;
+        gap: 25px;
+        flex-wrap: wrap;
+        width: 100%;
     }
 }
+
