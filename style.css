@@ -148,16 +148,17 @@ footer {
         display: flex;
         flex-direction: row;
         align-items: center;
-        justify-content: space-between;
-        gap: 10px;
+        justify-content: center; /* Centraliza o menu */
+        gap: 20px;
         width: 100%;
     }
 
     .titulo{
         margin: 20px 0 0 0;
-        font-size: 20px;
-        text-align: center;
-        width: 100%;
+        font-size: 22px;
+        width: 48%;               /* Lado a lado com a imagem */
+        text-align: left;          /* Fica igual ao desktop */
+        line-height: 1.1;
     }
 
     .imagem{
@@ -165,11 +166,16 @@ footer {
         justify-content: center;
         align-items: center;
         margin: 0;
-        width: 48%;
+        width: 48%;               /* Agora fica do lado do titulo */
+    }
+
+    .imagem img{
+        width: 140px;             /* Ajuste proporcional */
+        height: auto;
     }
 
     .evento{
-        width: 48%; 
+        width: 100%;
         text-align: center;
         margin: 0;
     }
@@ -187,4 +193,6 @@ footer {
         width: 100%;
     }
 }
+
+
 
