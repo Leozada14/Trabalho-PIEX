@@ -144,40 +144,48 @@ footer {
 
 @media (max-width: 600px){
 
-    header{
+    /* Coloca título + imagem lado a lado */
+    .top-section {
         display: flex;
         flex-direction: row;
+        justify-content: space-between;
         align-items: center;
-        justify-content: center; /* Centraliza o menu */
-        gap: 20px;
         width: 100%;
+        padding: 0 20px;
     }
 
     .titulo{
-        margin: 20px 0 0 0;
-        font-size: 22px;
-        width: 48%;               /* Lado a lado com a imagem */
-        text-align: left;          /* Fica igual ao desktop */
-        line-height: 1.1;
+        font-size: 28px;
+        line-height: 32px;
+        font-weight: bold;
+        width: 50%;
+        margin: 0;
+        text-align: left;
     }
 
     .imagem{
+        width: 50%;
         display: flex;
         justify-content: center;
         align-items: center;
         margin: 0;
-        width: 48%;               /* Agora fica do lado do titulo */
     }
 
     .imagem img{
-        width: 140px;             /* Ajuste proporcional */
+        width: 120px;
         height: auto;
+    }
+
+    /* resto */
+    header{
+        flex-direction: row;
+        justify-content: center;
+        gap: 30px;
     }
 
     .evento{
         width: 100%;
         text-align: center;
-        margin: 0;
     }
 
     .direita{
@@ -185,12 +193,7 @@ footer {
     }
 
     .imagens{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 25px;
-        flex-wrap: wrap;
-        width: 100%;
+        gap: 40px;
     }
 }
 
