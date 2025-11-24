@@ -2,7 +2,7 @@ body{
     background-color: LightSlateGray;
 }
 
-/* ===== HEADER ===== */
+
 header{
     display: flex;
     justify-content: center;
@@ -15,13 +15,13 @@ header a{
     color: inherit;
 }
 
-/* ===== TOPO ===== */
+
 .topo{
     display: flex;
     margin-top: 100px;
 }
 
-/* Mantém o alinhamento original */
+
 .titulo{
     width: 50%;
     font-size: 10px;
@@ -40,7 +40,7 @@ header a{
     height: auto;
 }
 
-/* ===== PARTE DE BAIXO ===== */
+
 .embaixo{
     margin-top: 160px;
 }
@@ -54,7 +54,7 @@ header a{
     display: flex;
     justify-content: center;
     gap: 50px;
-    flex-wrap: wrap; /* Apenas para evitar quebra feia */
+    flex-wrap: wrap;
 }
 
 .sobre{
@@ -62,7 +62,7 @@ header a{
     font-size: 25px;
 }
 
-/* ===== FOOTER ===== */
+
 footer {
     text-align: center;
     background-color: SteelBlue;
@@ -72,11 +72,7 @@ footer {
     margin-top: 100px;
 }
 
-/* ==================================================
-   ============== RESPONSIVIDADE ====================
-   ================================================== */
 
-/* ===== Tablets ===== */
 @media (max-width: 992px){
 
     .topo{
@@ -102,13 +98,13 @@ footer {
     }
 }
 
-/* ===== Celulares ===== */
+
 @media (max-width: 600px){
 
     header{
         flex-direction: column;
-        align-items: center; /* CENTRALIZA */
-        text-align: center;  /* CENTRALIZA */
+        align-items: center; 
+        text-align: center; 
         gap: 20px;
     }
 
@@ -120,7 +116,7 @@ footer {
     .titulo{
         width: 100%;
         font-size: 16px;
-        text-align: center; /* garante centralização */
+        text-align: center;
     }
 
     .imangesEmbaixo{
@@ -131,4 +127,5 @@ footer {
         margin-top: 80px;
     }
 }
+
 
