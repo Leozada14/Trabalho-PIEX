@@ -84,7 +84,7 @@ header a{
     font-size: large;
 }
 
-/* ===== FINAL ===== */
+
 .Final{
     margin-top: 100px;
 }
@@ -103,15 +103,14 @@ header a{
     flex-wrap: wrap;
 }
 
-/* ======== AQUI A CORREÇÃO PARA IMAGENS IGUAIS ======== */
+
 .imagens img{
-    width: 120px;     /* deixa ambas iguais */
-    height: 120px;    /* deixa ambas iguais */
-    object-fit: contain; /* mantém qualidade sem cortes */
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
 }
 
 
-/* ===================== TABLET ===================== */
 @media (max-width: 992px){
 
     .titulo{
@@ -141,20 +140,26 @@ header a{
     }
 }
 
-/* ===================== CELULAR ===================== */
+
 @media (max-width: 600px){
 
     header{
-        flex-direction: column;
-        align-items: center; /* CENTRALIZA */
-        text-align: center;  /* CENTRALIZA */
-        gap: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 25px;
+        width: 100%;
+        padding: 10px 0;
+        text-align: center;
     }
 
     header a{
+        width: auto;
         text-align: center;
-        width: 100%;
+        font-size: 18px;
     }
+
 
     .titulo{
         margin: 40px 0 0 0;
@@ -163,10 +168,14 @@ header a{
         width: 100%;
     }
 
+  
     .imagem{
         justify-content: center;
-        margin: 0;
+        margin: 0 auto;
+        width: 100%;
+        display: flex;
     }
+
 
     .evento{
         margin-left: 0;
@@ -178,14 +187,15 @@ header a{
         width: 90%;
     }
 
+
     .imagens{
         gap: 40px;
+        justify-content: center;
     }
 
-    /* imagens iguais no mobile */
     .imagens img{
         width: 110px;
         height: 110px;
+        object-fit: contain;
     }
 }
-
